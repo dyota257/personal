@@ -3,11 +3,11 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        script(src="https://use.fontawesome.com/6d1e5407c3.js")
         link(rel="stylesheet", href="css/style.css")
         title Dyota Tanuwibawa
     body
-
-        
+        //
         aside.menu
             p.menu-label General
             ul.menu-list
@@ -19,24 +19,60 @@ html(lang="en")
                     a Power Platform
 
         div.main
-            section.hero
+            section.block.hero.is-primary
                 div.hero-body
                     div.container
-                        h1.title  Welcome
-                        button.button.is-primary TEST BUTTON
+                        h1.title  Dyota Tanuwibawa
             
-            section.container
-                p   I am a hobbyist web developer, and this is my personal page.
-                p   You can find my projects here.
+            section.block.container.is-fluid
+                .content
+                    p   Jakarta-born. 
+                    p   Perth raised. 
+                    p   Hobbyist web developer. 
 
-            section.container
-                h2  Projects
-                h3  Web Development
+            section.block.container.is-fluid
+                .content
+                    h2 Projects
+                    h3 Web Development
                     ul
                         li 
-                            a(href="https://murmuring-crag-38443.herokuapp.com/") Wrestling WA Tournament manager 
+                            a(href="https://wrestlingwa.herokuapp.com/") Wrestling WA Tournament manager 
                             a(href="https://github.com/dyota257/wrestlingscoreboard") [GitHub]
+                            a(href="https://wrestlingwa.herokuapp.com/") 
+                                i.fa.fa-external-link
+                            span  (2020)
+
+                    h3 Data stuff
+                    ul           
+                        li Real estate web scraper (2020)
+                    
+                    h3  Power Platform
+                    h4  Power Apps 
+                    p   Built on SharePoint lists, aided by Power Automate
+                    ul
+                        li QHSE site dropped objects survey app (2020)
+                        li Mentor-mentee matcher (2020)
+                        li Document review and approval workflow (2020)
+                        li Business case calculator (2020)
+                        li Global company department emailer (2020)
+                        li Site/office QHSE walkaround app (2019)
+                        li Company bookmarks index (2019)
+                        li Ideas management system (2019)
+                    h4 Power BI
+                    ul
+                        li ...
+
+
+
             
-            section.container
-                h2.title  Contact me
-                p   dyota257@gmail.com
+            section.block.container.is-fluid
+                .content
+                    h2  Contact me
+                    p   
+                        i.fa.fa-envelope.square
+                        span  dyota257@gmail.com
+                    p
+                        i.fa.fa-github-square 
+                        a(href="https://github.com/dyota257")  GitHub 
+        
+            footer 

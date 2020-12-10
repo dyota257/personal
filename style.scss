@@ -1,8 +1,19 @@
 @charset "utf-8";
 
+// Modify Bulma
+
+$primary: rgb(200, 50, 7);
+$container-offset: 500px;
+
+// Import Bulma
+@import "bulma/bulma.sass";
+
+// Use Bulma
+
 $navoffset:160px;
 
 aside.menu {
+    background-color: $white-ter;
     position: fixed;
     height: 100%;
     width: $navoffset;
@@ -11,8 +22,3 @@ aside.menu {
 .main {
     margin-left:$navoffset;
 }
-
-$primary: rgb(200, 50, 7);
-
-// Must be last
-@import "bulma/bulma.sass";
