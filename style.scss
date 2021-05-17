@@ -6,11 +6,22 @@ $primary: rgb(200, 50, 7);
 $container-offset: 500px;
 
 // Import Bulma
-@import "bulma/bulma.sass";
+// @import "bulma/bulma.sass";
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/base/_all.sass";
+@import "bulma/sass/elements/_all.sass";
+@import "bulma/sass/layout/_all.sass";
+@import "bulma/sass/components/menu.sass";
 
 // Use Bulma
 
 $navoffset:160px;
+
+@media print {
+    aside {
+        display: none;
+    }
+}
 
 aside.menu {
     background-color: $white-ter;
@@ -21,4 +32,15 @@ aside.menu {
 
 .main {
     margin-left:$navoffset;
+}
+
+details {
+    font-weight: lighter;
+    margin-left: 20px;
+    margin-bottom: 1em;
+}
+
+summary {
+    font-weight: normal;
+    margin-bottom: 0.5em;
 }

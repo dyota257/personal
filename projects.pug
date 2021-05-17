@@ -5,49 +5,28 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         script(src="https://use.fontawesome.com/6d1e5407c3.js")
         link(rel="stylesheet", href="css/style.css")
-        title Dyota Tanuwibawa
+        title Dyota Tanuwibawa - Projects
     body
         
         aside.menu
-            p.menu-label General
+            p.menu-label Projects
             ul.menu-list
                 li 
-                    a(href='#about-me') About me
+                    a(href='index.tml') Return to home
                 li 
                     a(href='#web-development') Web
                 li 
                     a(href='#data-work') Data work
                 li 
                     a(href='#power-platform') Power Platform
-                li 
-                    a(href='projects.html') Project details
+                
 
         div.main
             section.block.hero.is-primary
                 div.hero-body
                     div.container
-                        h1.title  Dyota Tanuwibawa
+                        h1.title  Projects
             
-            section.block.container.is-fluid#about-me
-                .content
-                    p   
-                        i Jakarta-born
-                    p   
-                        i Perth raised, 
-                        b Australian citizen.
-                    p   
-                        i Former facilities engineer in oil and gas, currently professional 
-                        b business systems analyst.
-                    p   
-                        i Hobbyist 
-                        b web developer.
-                    p   
-                        i Speaks Indonesian, Hokkien Chinese, 
-                        b English
-                    p   
-                        i Writes 
-                        b Excel formulas, Power Apps/Power Fx, Power Query M, HTML, JavaScript
-
             section.block.container.is-fluid
                 .content
                     h2 Projects
@@ -67,29 +46,22 @@ html(lang="en")
                             span  (2020)
 
                     h3#data-work Data work
-                    details
-                        summary Real estate web scraper in Node.js and Excel Power Query (2020)
-                        p This is a compound tool, using Node.js in the command line and Excel. Upon executing, the JS script will hits a list of URLs on domain.com.au for the home open inspections happening in the next Saturday and Sunday, and list them (along with all the house attributes) in a .csv file. 
-                        p The .csv file is then ingested into a Excel file through Power Query, where it is presented as a table. 
-                        
-                    li(style='margin-left:20px;') Design of relational "database" structure for various Power Apps (2020-21)
-                        
+                    ul           
+                        li Real estate web scraper in Node.js and Excel Power Query (2020)
+                        li Design of relational "database" structure for various Power Apps (2020-21)
                     
                     h3#power-platform  Power Platform
                     h4  Power Apps 
                     p   Built on SharePoint lists as database, aided by Power Automate.
-                    details
-                        summary Corporate management of change form digitalisation (2021)
-                        p A management of change process, used to recording administrative changes at a corporate level, had existed, and was carried out using documents in .docx and .xlsx. Description were filled out in .docx, and outcomes of risk workshops were tabulated in .xlsx. Users needed to consult the company procedure or refer to the global QHSE manager for guidance. The management of the process itself was done through an Excel sheet (recording titles, unique ID numbers to MOCs, etc. )
-                        p This app was a digital manifestation of the same process. Numbering to new MOCs was automatically assigned, and registering of MOC register was kept up to date automatically. Practical usage of the tool was guided through on-screen prompts, and the user journey through the process was guided by the application logic itself. 
                     ul
+                        li Corporate management of change form digitalisation (2021)
                         li "Amazing Race" companion mobile app with QR code scanner (2021)
                         li Building visitor/employee sign-in tablet app (2021)
                         li QHSE site dropped objects inspection tablet app (2020)
                         li Mentor-mentee matcher (2020)
                         //- li Document review and approval workflow (2020)
                         li Business case calculator (2020)
-                        li Global "noticeboard" for seeking/offering engineering hours across office (2020)
+                        li Global company department emailer (2020)
                         li Site/office QHSE walkaround mobile app (2019)
                         li Company bookmarks index (2019)
                         li Ideas management system (2019)
@@ -98,7 +70,6 @@ html(lang="en")
                         li Engineering project S curve (with companion Power App for update input) (2021)
                         li News headline web scraper (targeting Google News and websites) (2020)
                     h4 Power Query in Excel
-                    ul
                         li Conversion of tabulated inspection reports in PDF (100+ pages) to a single Excel table (2020)
 
 
