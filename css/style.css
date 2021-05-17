@@ -3365,17 +3365,27 @@ a.tag:hover {
     display: none;
   }
 }
-aside.menu {
-  background-color: whitesmoke;
-  position: fixed;
-  height: 100%;
-  width: 160px;
-}
+@media screen and (max-width: 700px) {
+  aside {
+    display: none;
+  }
 
-.main {
-  margin-left: 160px;
+  .main {
+    margin-left: 0px;
+  }
 }
+@media screen and (min-width: 701px) {
+  aside.menu {
+    background-color: whitesmoke;
+    position: fixed;
+    height: 100%;
+    width: 160px;
+  }
 
+  .main {
+    margin-left: 160px;
+  }
+}
 details {
   font-weight: lighter;
   margin-left: 20px;

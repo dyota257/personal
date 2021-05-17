@@ -13,8 +13,6 @@ $container-offset: 500px;
 @import "bulma/sass/layout/_all.sass";
 @import "bulma/sass/components/menu.sass";
 
-// Use Bulma
-
 $navoffset:160px;
 
 @media print {
@@ -23,15 +21,28 @@ $navoffset:160px;
     }
 }
 
-aside.menu {
-    background-color: $white-ter;
-    position: fixed;
-    height: 100%;
-    width: $navoffset;
+@media screen and (max-width:700px) {
+    aside {
+        display: none;
+    }
+
+    .main {
+        margin-left: 0px;
+    }
+    
 }
 
-.main {
-    margin-left:$navoffset;
+@media screen and (min-width:701px) {
+    aside.menu {
+        background-color: $white-ter;
+        position: fixed;
+        height: 100%;
+        width: $navoffset;
+    }
+    
+    .main {
+        margin-left:$navoffset;
+    }
 }
 
 details {
