@@ -1343,3 +1343,7 @@ summary {
 .container {
   margin-top: 3.5em;
 }
+
+.content h5 {
+  font-size: 1em;
+}

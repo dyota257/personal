@@ -62,6 +62,12 @@ html(lang="en")
 
                     h3#data-work Data work
                     details
+                        summary Count of number of times ships in a shipping channel travel across subsea pipeline, with angles of crossing (2021)
+                        p Point location data was given of ships (~1.4M points). Point locations were also given, that define the lay of a subsea pipeline. The task was to count how many times ships "cross" the pipeline, along with the angle of crossing (between 0 and 90 degrees).
+                        p After reducing the dataset, point location data were converted into vectors (comprised of two points each). For every kilometer of the pipeline, every ship vector was examined to see if it intersected that one-kilometer section.
+                        p The end deliverable was a summary table of counts, per kilometer section of pipeline, and a map that displayed the ship travel paths and the pipeline. 
+                        p Everything was executed using only Microsoft Excel, primarily Power Query. Some Visual Basic for Excel was used to assist in formatting charts. 
+                    details
                         summary Real estate web scraper in Node.js and Excel Power Query (2020)
                         p This is a compound tool, using Node.js in the command line and Excel. Upon executing, the JS script will hits a list of URLs on domain.com.au for the home open inspections happening in the next Saturday and Sunday, and list them (along with all the house attributes) in a .csv file. 
                         p The .csv file is then ingested into a Excel file through Power Query, where it is presented as a table. 
