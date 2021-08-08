@@ -44,6 +44,12 @@
           </ul>
           <h3 id="data-work">Data work</h3>
           <details>
+            <summary>PowerShell script to download data from a web API for ingestion into Power BI (2021)</summary>
+            <p>This was a workaround, to compensate for a web request from inside a Power BI dataset that failed to authorise in Power BI Service (further details are outlined <a href="(https://dyota257.bearblog.dev/powershell-download-data/">here</a>).</p>
+            <p>This was a PowerShell script that made use of Invoke-WebRequest to hit an API endpoint, download the JSON data, and save it into a file. The file is saved to a SharePoint location so that it is accessible to the Power BI report. </p>
+            <p>This was automated by creating a shortcut in the Startup folder in Windows. The target for the shortcut contains command-line commands to run the PowerShell script. Thus, the data is downloaded every time the computer is started up. </p>
+          </details>
+          <details>
             <summary>Count of number of times ships in a shipping channel travel across subsea pipeline, with angles of crossing (2021)</summary>
             <p>Point location data was given of ships (~1.4M points). Point locations were also given, that define the lay of a subsea pipeline. The task was to count how many times ships "cross" the pipeline, along with the angle of crossing (between 0 and 90 degrees).</p>
             <p>After reducing the dataset, point location data were converted into vectors (comprised of two points each). For every kilometer of the pipeline, every ship vector was examined to see if it intersected that one-kilometer section.</p>
