@@ -3,7 +3,7 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        script(src="https://use.fontawesome.com/6d1e5407c3.js")
+        // script(src="https://use.fontawesome.com/6d1e5407c3.js")
         link(rel="stylesheet", href="css/style.css")
         title Dyota Tanuwibawa
     body
@@ -43,8 +43,11 @@ html(lang="en")
                         i Speaks Indonesian, Hokkien Chinese, 
                         b English.
                     p   
-                        i Writes 
-                        b Excel formulas, Power Apps/Power Fx, Power Query M, HTML, JavaScript.
+                        i For a job, writes 
+                        b Power Apps, Power Query M, DAX, Excel formulas, PowerShell
+                    p 
+                        i For a hobby, also writes 
+                        b HTML/CSS, JavaScript (jQuery, Node.js/Express), SQL
 
             section.block.container.is-fluid
                 .content
@@ -64,7 +67,7 @@ html(lang="en")
                     details
                         summary PowerShell script to download data from a web API for ingestion into Power BI (2021)
                         p This was a workaround, to compensate for a web request from inside a Power BI dataset that failed to authorise in Power BI Service (further details are outlined 
-                            a(href='(https://dyota257.bearblog.dev/powershell-download-data/') here
+                            a(href='https://dyota257.bearblog.dev/powershell-download-data/') here
                             | ).
                         p This was a PowerShell script that made use of Invoke-WebRequest to hit an API endpoint, download the JSON data, and save it into a file. The file is saved to a SharePoint location so that it is accessible to the Power BI report. 
                         p This was automated by creating a shortcut in the Startup folder in Windows. The target for the shortcut contains command-line commands to run the PowerShell script. Thus, the data is downloaded every time the computer is started up. 
@@ -87,6 +90,13 @@ html(lang="en")
                     h4  Power Apps 
                     p   Built on SharePoint lists as database, aided by Power Automate. All were built within one Office365 tenant. 
                     h5 2021
+                    details
+                        summary Electronic business card with QR code to save contact details
+                        p A phone-size, single-screen app that mimics the layout of the corporate business card, with a prominent QR code. Upon scanning the code with the camera of a smartphone, the phone will pick up all contact data (name, email, phone number, job title etc.) to be saved in the address book.
+                        p QR code is a HTML textbox with a single 
+                            code &ltimg&gt 
+                            | tag. The source is an API call to a third party API that converts strings into QR codes. The string passed in as a parameter is the contact details in the vCard protocol format. 
+
                     details
                         summary Corporate management of change form digitalisation
                         p A management of change process, used to recording administrative changes at a corporate level, had existed, and was carried out using documents in .docx and .xlsx. Description were filled out in .docx, and outcomes of risk workshops were tabulated in .xlsx. Users needed to consult the company procedure or refer to the global QHSE manager for guidance. The management of the process itself was done through an Excel sheet (recording titles, unique ID numbers to MOCs, etc. )
