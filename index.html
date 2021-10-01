@@ -39,10 +39,17 @@
         <div class="content">
           <h2>Projects</h2>
           <h3 id="web-development">Web Development</h3>
-          <ul>
-            <li> <a href="https://dyota257.github.io/personal/">This website </a><a href="https://github.com/dyota257/personal">[GitHub]</a><span> (2020)</span></li>
-            <li> <a href="https://wrestlingwa.herokuapp.com/">Wrestling WA Tournament manager </a><a href="https://github.com/dyota257/wrestlingscoreboard">[GitHub]</a><span> (2020)</span></li>
-          </ul>
+          <details>                           
+            <summary><a href="https://dyota257.github.io/personal/">This website </a><a href="https://github.com/dyota257/personal">[GitHub]</a><span> (2020)</span></summary>
+            <p>Templated in Pug.js, styled with Bulma CSS. Hosted on GitHub Pages.</p>
+          </details>
+          <details> 
+            <summary><a href="https://wrestlingwa.herokuapp.com/">Wrestling WA Tournament manager </a><a href="https://github.com/dyota257/wrestlingscoreboard">[GitHub]</a><span> (2020)</span></summary>
+            <p>This project has two distinct but related parts: <b>scoreboard</b>, and <b>tournament manager</b>.</p>
+            <p>The scoreboard is composed of a countdown timer and a score counter for two players. There are two interactions with database: picking up names from fixtures to display on the scoreboard, and posting match results back to database upon match completion. </p>
+            <p>The tournament manager is mainly concerned with displaying fixtures. Using the tournament manager applicaton, the tournament organiser can copy and paste in fixtures from the Excel source into a text input field, and send the fixtures to the database. Users can scan a QR code, which allows them to view the fixtures.</p>
+            <p>This replaces a past workflow where fixtures needed to be formatted for print, have multiple copies printed out during the proceeding of the tournament, have the copies taken to the walls of the tournament hall, and participants would need to crowd around to check when their match is due. </p>
+          </details>
           <h3 id="data-work">Data work</h3>
           <details>
             <summary>PowerShell script to download data from a web API for ingestion into Power BI (2021)</summary>
