@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5>2022</h5>
+
+    <details>
+        <summary>Task list roll-up</summary>
+        <p>The desired outcome was thus: each member of our team was to have an Excel spreadsheet that contained all of the projects we were working on. Each project had a number of subtasks.</p>
+        <p>Our manager was to have a spreadsheet of the same format, expect, instead of projects, her spreadsheet would be divided into people (her direct reports), and instead of tasks, it would be our respective projects.</p>
+        <p>This was all executed using Power Query. We (as her direct reports) would fill out our task lists. Our manager would press Ctrl+Alt+F5 on her spreadsheet (or click Refresh) and all of our tasks would be updated on hers.</p>
+    </details>
+
+    <details>
+        <summary>Trace chain of command</summary>
+        <p>My team used a spreadsheet that was a HR listing of all the employees in the department. They routinely needed to start with an employee, trace their reporting line upwards (this person's manager, then their manager, then their manager), and pick out an attribute at each step (in this case, authorisation for expenditure limit). It would stop at the highest level of the organisational hierarchy.</p>
+        <p>I provided a spreadsheet cell where the employee ID could be entered. Once entered, upon refresh, the Power Query script would trace up the chain of commance and display the results in a single table. </p>
+    </details>
+
+    
+</body>
+</html>

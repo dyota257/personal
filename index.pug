@@ -62,7 +62,7 @@ html(lang="en")
 
                     details 
                         summary
-                            a(href="https://wrestlingwa.herokuapp.com/") Wrestling WA Tournament manager 
+                            a(href="https://wrestlingwa.onrender.com/") Wrestling WA Tournament manager (retired)
                             a(href="https://github.com/dyota257/wrestlingscoreboard") [GitHub]
                             span  (2020)
                         p This project has two distinct but related parts: #[b scoreboard], and #[b tournament manager].
@@ -157,6 +157,7 @@ html(lang="en")
                     details
                         summary Site/office QHSE walkaround mobile app
                         p Mobile app designed for hand-held devices, for use during a leadership or management visit to an office or site, focussing on QHSE. This app replaces a paper checklist. 
+                        p Mobile app designed for hand-held devices, for use during a leadership or management visit to an office or site, focussing on QHSE. This app replaces a paper checklist. 
                         p The questionnaire is filled out on the mobile device. Photos can be taken and appended to each question. At the end of the questionnaire, the results are pre-filled into PDF document which is sent to the QSHE administrator. 
                         p The PDF document is in the same layout as the paper checklist previously in use. 
 
@@ -176,12 +177,22 @@ html(lang="en")
                     ul
                         li Engineering project S curve (with companion Power App for update input) (2021)
                         li News headline web scraper (targeting Google News and websites) (2020)
+
                     h4 Power Query in Excel
+                    details
+                        summary Reconstruct "chain of command" in organisational hierarchy (2022)
+                        p Source data is a table, where every row contains an employee and their direct line manager.
+                        p This solution creates a table where, starting with the target employee, each succeeding row is the manager of the previous row. This effectively results in a linear "chain of command", going all the way to the top of the organisation (where the top person has nobody else to report to.)
+                        p Details on how this was executed is outlined [here](https://dyota257.bearblog.dev/chain-of-command/)
+                    
+                    details
+                        summary Task list roll-up (2022)
+                        p The desired outcome was thus: each member of our team was to have an Excel spreadsheet that contained all of the projects we were working on. Each project had a number of subtasks.
+                        p Our manager was to have a spreadsheet of the same format, expect, instead of projects, her spreadsheet would be divided into people (her direct reports), and instead of tasks, it would be our respective projects.
+                        p This was all executed using Power Query. We (as her direct reports) would fill out our task lists. Our manager would press Ctrl+Alt+F5 on her spreadsheet (or click Refresh) and all of our tasks would be updated on hers.
+                    
                     ul
                         li Conversion of tabulated inspection reports in PDF (100+ pages) to a single Excel table (2020)
-                    
-
-
 
 
             

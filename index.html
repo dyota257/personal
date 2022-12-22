@@ -44,7 +44,7 @@
             <p>Templated in Pug.js, styled with Bulma CSS. Hosted on GitHub Pages.</p>
           </details>
           <details> 
-            <summary><a href="https://wrestlingwa.herokuapp.com/">Wrestling WA Tournament manager </a><a href="https://github.com/dyota257/wrestlingscoreboard">[GitHub]</a><span> (2020)</span></summary>
+            <summary><a href="https://wrestlingwa.onrender.com/">Wrestling WA Tournament manager (retired)</a><a href="https://github.com/dyota257/wrestlingscoreboard">[GitHub]</a><span> (2020)</span></summary>
             <p>This project has two distinct but related parts: <b>scoreboard</b>, and <b>tournament manager</b>.</p>
             <p>The scoreboard is composed of a countdown timer and a score counter for two players. There are two interactions with database: picking up names from fixtures to display on the scoreboard, and posting match results back to database upon match completion. </p>
             <p>The tournament manager is mainly concerned with displaying fixtures. Using the tournament manager applicaton, the tournament organiser can copy and paste in fixtures from the Excel source into a text input field, and send the fixtures to the database. Users can scan a QR code, which allows them to view the fixtures.</p>
@@ -132,6 +132,7 @@
           <details>
             <summary>Site/office QHSE walkaround mobile app</summary>
             <p>Mobile app designed for hand-held devices, for use during a leadership or management visit to an office or site, focussing on QHSE. This app replaces a paper checklist. </p>
+            <p>Mobile app designed for hand-held devices, for use during a leadership or management visit to an office or site, focussing on QHSE. This app replaces a paper checklist. </p>
             <p>The questionnaire is filled out on the mobile device. Photos can be taken and appended to each question. At the end of the questionnaire, the results are pre-filled into PDF document which is sent to the QSHE administrator. </p>
             <p>The PDF document is in the same layout as the paper checklist previously in use. </p>
           </details>
@@ -153,6 +154,18 @@
             <li>News headline web scraper (targeting Google News and websites) (2020)</li>
           </ul>
           <h4>Power Query in Excel</h4>
+          <details>
+            <summary>Reconstruct "chain of command" in organisational hierarchy (2022)</summary>
+            <p>Source data is a table, where every row contains an employee and their direct line manager.</p>
+            <p>This solution creates a table where, starting with the target employee, each succeeding row is the manager of the previous row. This effectively results in a linear "chain of command", going all the way to the top of the organisation (where the top person has nobody else to report to.)</p>
+            <p>Details on how this was executed is outlined [here](https://dyota257.bearblog.dev/chain-of-command/)</p>
+          </details>
+          <details>
+            <summary>Task list roll-up (2022)</summary>
+            <p>The desired outcome was thus: each member of our team was to have an Excel spreadsheet that contained all of the projects we were working on. Each project had a number of subtasks.</p>
+            <p>Our manager was to have a spreadsheet of the same format, expect, instead of projects, her spreadsheet would be divided into people (her direct reports), and instead of tasks, it would be our respective projects.</p>
+            <p>This was all executed using Power Query. We (as her direct reports) would fill out our task lists. Our manager would press Ctrl+Alt+F5 on her spreadsheet (or click Refresh) and all of our tasks would be updated on hers.</p>
+          </details>
           <ul>
             <li>Conversion of tabulated inspection reports in PDF (100+ pages) to a single Excel table (2020)</li>
           </ul>
