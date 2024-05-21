@@ -51,6 +51,15 @@
             <p>This replaces a past workflow where fixtures needed to be formatted for print, have multiple copies printed out during the proceeding of the tournament, have the copies taken to the walls of the tournament hall, and participants would need to crowd around to check when their match is due. </p>
           </details>
           <h3 id="data-work">Data work</h3>
+          <details> 
+            <summary>PowerShell program to remap table attributes and split into multiple files (2024)</summary>
+            <p>There was a need to remap the way people and projects were organised in the financial system, in advance of a company restructuring. People and projects were to be tagged according to the new structure. The new structure is not a one-to-one correspondence with the new structure, and the logic that drives the remapping is complex and cannot be simply done with a one-step XLOOKUP. </p>
+            <p>There were about 2,000 people to remap, and almost 6,000 projects. Through the process, the two full lists needed to be divided among around 7 different departments (that's one Excel file) with 3 to 6 different sub-departments in each (sheets in the Excel file), so that they can review. </p>
+            <p>Along the way, I needed to be flexible enough to accommodate changing information. The project scope would change, the shape of the deliverables would change, and new information would come in (for example, review responses).</p>
+            <p>Finally, there was a deadline of four weeks to nothing to a final submission, and I needed to do this as an extra assignment alongside my normal duties. </p>
+            <p>In order to do this, I built a series of PowerShell scripts (that toal in excess of 1,800+ lines of code) that fed on the main list, definitively remapped every item, took into account corrections, and split up the main list into different departments so that we can communicate to department heads. Along the way, I built in summarising functions so that project progress can be communicated upwards. </p>
+            <p>In doing this, the time to first draft was completed in four days, ahead of an expectation of 1.5 weeksm, and including a full system rebuild on the second day. The final submission was met two days early, with all items remapped. </p>
+          </details>
           <details>
             <summary>PowerShell script to download data from a web API for ingestion into Power BI (2021)</summary>
             <p>This was a workaround, to compensate for a web request from inside a Power BI dataset that failed to authorise in Power BI Service (further details are outlined <a href="https://dyota257.bearblog.dev/powershell-download-data/">here</a>).</p>
@@ -151,8 +160,8 @@
           <h4>Power BI</h4>
           <ul>
             <li>Weekly reporting, and integrated data model (2023-2024)
+              <p>With a Power BI data model set up, I was able tobring forward the update day to Monday close-of-business. I was able to take advantage of filtering in the report view to do away with multiple downloads and reports, all of the processing steps were codified into Power Query, and distribution is done via a static link to Power BI. </p>
               <p>Weekly reporting is expected early in the week. Source data needs to be downloaded from reporting system and composed into a report manually in Excel. Due to limitations of processing in Excel, time is also taken up downloading large reports to enable the correct lookups. The processing time is also compounded by having to work with four different files. The report is usually received via email by leadership on Wednesday or Thursday, and does not leave enough time to course-correct. </p>
-              <p>With a Power BI data model set up, I was able to bring forward the update day to Monday close-of-business. I was able to take advantage of filtering in the report view to do away with multiple downloads and reports, all of the processing steps were codified into Power Query, and distribution is done via a static link to Power BI. </p>
               <p>Using Power BI also comes with the advantage of being able to correct things in the past (without redownloading reports), make persistent corrections, on top of the clear visual advantage of the Power BI report view. </p>
             </li>
             <li>Engineering project S curve (with companion Power App for update input) (2021)</li>
